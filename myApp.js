@@ -123,15 +123,11 @@ const queryChain = (done) => {
       name: 1
     })
     .limit(2).select({
-      name: 1,
       age: 0,
-      favoriteFoods: 1
     }).exec((err, data) => {
       if (err) return console.error(err);
       done(null, data)
     })
-
-  done(null /*, data*/ );
 };
 
 /** **Well Done !!**
